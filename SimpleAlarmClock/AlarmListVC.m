@@ -66,15 +66,18 @@
     if (cell == nil) {
         cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                      reuseIdentifier:CellIdentifier];
-        topLabel = [[UILabel alloc] initWithFrame:CGRectMake(14,5,170,40)];
+        cell.backgroundColor = [UIColor blackColor];
+        int viewWidth = self.view.bounds.size.width / 2;
+        topLabel = [[UILabel alloc] initWithFrame:CGRectMake(14, 5, viewWidth, 50)];
+
         [cell.contentView addSubview:topLabel];
         
-        topLabel.backgroundColor = [UIColor grayColor];
-        topLabel.textColor = [UIColor whiteColor];
+        topLabel.backgroundColor = [UIColor blackColor];
+        topLabel.textColor = [UIColor greenColor];
         topLabel.highlightedTextColor = [UIColor greenColor];
         topLabel.font = [UIFont systemFontOfSize:[UIFont labelFontSize] +2];
         
-        bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(14,30,170,40)];
+        bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(14, 30, viewWidth, 50)];
         [cell.contentView addSubview:bottomLabel];
         
         bottomLabel.backgroundColor = [UIColor clearColor];

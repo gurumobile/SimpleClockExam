@@ -331,7 +331,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUz-Ge-jtK">
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cld-08-EWI">
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="dataSource" destination="xLA-5f-5uJ" id="zTQ-8X-Cmq"/>
                                             <outlet property="delegate" destination="xLA-5f-5uJ" id="Zqw-mL-JLd"/>
@@ -460,7 +460,7 @@
                                             <outlet property="delegate" destination="VjL-qB-eiH" id="hFk-0s-cBi"/>
                                         </connections>
                                     </tableView>
-                                    <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-Gc-Oi3">
+                                    <datePicker opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-Gc-Oi3">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <date key="date" timeIntervalSinceReferenceDate="498889192.33017898">
@@ -469,7 +469,7 @@
                                         <locale key="locale" localeIdentifier="en_US"/>
                                     </datePicker>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="yaT-x6-S4B" firstAttribute="height" secondItem="xLU-Ue-Nqd" secondAttribute="height" multiplier="0.65" id="B1W-gW-dvk"/>
                                     <constraint firstItem="ex7-Gc-Oi3" firstAttribute="top" secondItem="yaT-x6-S4B" secondAttribute="bottom" id="Nhm-zh-zIL"/>
@@ -563,7 +563,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="biM-ha-xro">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="nSG-jd-c2U" id="gRQ-PI-pdt"/>
                                     <outlet property="delegate" destination="nSG-jd-c2U" id="pjY-Dj-Y6H"/>

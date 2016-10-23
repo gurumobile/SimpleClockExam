@@ -38,11 +38,12 @@
                                       reuseIdentifier:@"cell"];
         cell.accessoryType = UITableViewCellAccessoryNone;
         
+        cell.backgroundColor = [UIColor blackColor];
         if ([indexPath section] == 0) {
             UITextField *labelTextField = [[UITextField alloc] initWithFrame:CGRectMake(8, 4, 280, 35)];
             labelField = labelTextField;
             labelTextField.adjustsFontSizeToFitWidth = YES;
-            labelTextField.textColor = [UIColor blackColor];
+            labelTextField.textColor = [UIColor greenColor];
             labelTextField.backgroundColor = [UIColor clearColor];
             labelTextField.text = self.label;
             labelTextField.returnKeyType = UIReturnKeyDone;
@@ -57,13 +58,10 @@
             labelTextField.clearButtonMode = UITextFieldViewModeAlways;
             [labelTextField setEnabled: YES];
             [cell.contentView addSubview:labelTextField];
-            
         }
     }
-    
     return cell;
 }
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cellSelected = [tableView cellForRowAtIndexPath: indexPath];

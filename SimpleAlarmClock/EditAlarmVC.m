@@ -28,6 +28,8 @@
         self.label = oldAlarmObject.label;
         self.datePicker.date = oldAlarmObject.timeToSetOff;
         self.notificationID = oldAlarmObject.notificationID;
+        
+        self.datePicker.hidden = NO;
     }
 }
 
@@ -54,7 +56,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    cell.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [UIColor blackColor];
+    
     if (indexPath.section == 0) {
         UILabel *labelTextField = [[UILabel alloc] initWithFrame:CGRectMake(180, 4, 280, 35)];
         labelTextField.adjustsFontSizeToFitWidth = YES;
@@ -63,7 +66,7 @@
         [labelTextField setEnabled:YES];
         
         if (indexPath.row == 0) {
-            cell.textLabel.text = @"Alarm";
+            cell.textLabel.text = self.label;
             labelTextField.text = self.label;
         }
         [cell.contentView addSubview:labelTextField];
@@ -99,15 +102,13 @@
     //cancel alarm
     UIApplication *app = [UIApplication sharedApplication];
     NSArray *eventArray = [app scheduledLocalNotifications];
-    for (int i=0; i<[eventArray count]; i++)
-    {
+    
+    for (int i=0; i<[eventArray count]; i++) {
         UILocalNotification* oneEvent = [eventArray objectAtIndex:i];
         NSDictionary *userInfoCurrent = oneEvent.userInfo;
         NSString *uid=[NSString stringWithFormat:@"%@",[userInfoCurrent valueForKey:@"notificationID"]];
-        if ([uid isEqualToString:[NSString stringWithFormat:@"%i",self.notificationID]])
-        {
-            //Cancelling local notification
-            
+        
+        if ([uid isEqualToString:[NSString stringWithFormat:@"%li",(long)self.notificationID]]) {
             [app cancelLocalNotification:oneEvent];
             break;
         }
