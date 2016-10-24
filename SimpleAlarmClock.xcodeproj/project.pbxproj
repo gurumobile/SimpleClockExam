@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3644061DBDEFCB0070476B /* Best_Morning_Alarm.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 7E3644041DBDEFCB0070476B /* Best_Morning_Alarm.m4r */; };
+		7E3644071DBDEFCB0070476B /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E3644051DBDEFCB0070476B /* digital-7.ttf */; };
 		7EBEB4CD1DBC50850069C8F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBEB4CC1DBC50850069C8F3 /* main.m */; };
 		7EBEB4D01DBC50850069C8F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBEB4CF1DBC50850069C8F3 /* AppDelegate.m */; };
 		7EBEB4D61DBC50850069C8F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBEB4D41DBC50850069C8F3 /* Main.storyboard */; };
 		7EBEB4D81DBC50850069C8F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBEB4D71DBC50850069C8F3 /* Assets.xcassets */; };
 		7EBEB4DB1DBC50850069C8F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBEB4D91DBC50850069C8F3 /* LaunchScreen.storyboard */; };
-		7EBEB4E41DBC99890069C8F3 /* Best_Morning_Alarm.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 7EBEB4E21DBC99890069C8F3 /* Best_Morning_Alarm.m4r */; };
-		7EBEB4E51DBC99890069C8F3 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EBEB4E31DBC99890069C8F3 /* digital-7.ttf */; };
 		7EBEB4E81DBC999A0069C8F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBEB4E71DBC999A0069C8F3 /* CoreGraphics.framework */; };
 		7EBEB4EA1DBC99A20069C8F3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBEB4E91DBC99A20069C8F3 /* AVFoundation.framework */; };
 		7EBEB4F01DBC9AC20069C8F3 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBEB4EF1DBC9AC20069C8F3 /* HomeVC.m */; };
@@ -24,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E3644041DBDEFCB0070476B /* Best_Morning_Alarm.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = Best_Morning_Alarm.m4r; sourceTree = "<group>"; };
+		7E3644051DBDEFCB0070476B /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		7EBEB4C81DBC50850069C8F3 /* SimpleAlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBEB4CC1DBC50850069C8F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EBEB4CE1DBC50850069C8F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		7EBEB4D71DBC50850069C8F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EBEB4DA1DBC50850069C8F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EBEB4DC1DBC50850069C8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EBEB4E21DBC99890069C8F3 /* Best_Morning_Alarm.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; name = Best_Morning_Alarm.m4r; path = "../../../../Downloads/Alarm/Alarm-Clock-iOS-master/AlarmClock/Best_Morning_Alarm.m4r"; sourceTree = "<group>"; };
-		7EBEB4E31DBC99890069C8F3 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../../Downloads/Alarm/Alarm-Clock-iOS-master/AlarmClock/digital-7.ttf"; sourceTree = "<group>"; };
 		7EBEB4E71DBC999A0069C8F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7EBEB4E91DBC99A20069C8F3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7EBEB4EE1DBC9AC20069C8F3 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		7EBEB4CB1DBC50850069C8F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7EBEB4E21DBC99890069C8F3 /* Best_Morning_Alarm.m4r */,
-				7EBEB4E31DBC99890069C8F3 /* digital-7.ttf */,
+				7E3644041DBDEFCB0070476B /* Best_Morning_Alarm.m4r */,
+				7E3644051DBDEFCB0070476B /* digital-7.ttf */,
 				7EBEB4CC1DBC50850069C8F3 /* main.m */,
 				7EBEB4DC1DBC50850069C8F3 /* Info.plist */,
 				7EBEB4D91DBC50850069C8F3 /* LaunchScreen.storyboard */,
@@ -198,9 +198,9 @@
 			files = (
 				7EBEB4DB1DBC50850069C8F3 /* LaunchScreen.storyboard in Resources */,
 				7EBEB4D81DBC50850069C8F3 /* Assets.xcassets in Resources */,
-				7EBEB4E41DBC99890069C8F3 /* Best_Morning_Alarm.m4r in Resources */,
+				7E3644061DBDEFCB0070476B /* Best_Morning_Alarm.m4r in Resources */,
 				7EBEB4D61DBC50850069C8F3 /* Main.storyboard in Resources */,
-				7EBEB4E51DBC99890069C8F3 /* digital-7.ttf in Resources */,
+				7E3644071DBDEFCB0070476B /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

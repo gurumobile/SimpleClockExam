@@ -56,13 +56,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    cell.backgroundColor = [UIColor blackColor];
+    cell.backgroundColor = [UIColor whiteColor];
     
     if (indexPath.section == 0) {
-        UILabel *labelTextField = [[UILabel alloc] initWithFrame:CGRectMake(180, 4, 280, 35)];
+        UILabel *labelTextField = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.view.bounds.size.width, 50)];
         labelTextField.adjustsFontSizeToFitWidth = YES;
-        labelTextField.textColor = [UIColor whiteColor];
-        labelTextField.backgroundColor = [UIColor blackColor];
+        labelTextField.textColor = [UIColor blackColor];
+        labelTextField.backgroundColor = [UIColor whiteColor];
+        labelTextField.textAlignment = NSTextAlignmentCenter;
         [labelTextField setEnabled:YES];
         
         if (indexPath.row == 0) {

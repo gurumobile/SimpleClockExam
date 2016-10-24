@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlarmListVC : UIViewController
+@interface AlarmListVC : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *alarmListTbl;
 
 @property (nonatomic, strong) NSMutableArray *listOfAlarms;
-
-- (IBAction)onAddAlarm:(id)sender;
 
 @end

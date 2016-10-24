@@ -14,7 +14,7 @@
 
 @end
 
-@implementation AlarmListVC
+@implementation AlarmListVC 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -64,7 +64,7 @@
     UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+        cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
                                      reuseIdentifier:CellIdentifier];
         cell.backgroundColor = [UIColor blackColor];
         int viewWidth = self.view.bounds.size.width / 2;
@@ -84,6 +84,7 @@
         bottomLabel.textColor = [UIColor blackColor];
         bottomLabel.highlightedTextColor = [UIColor whiteColor];
         bottomLabel.font = [UIFont systemFontOfSize:[UIFont labelFontSize]];
+//        bottomLabel.text = 
         
         enabledSwitch = [[UISwitch alloc]
                          initWithFrame:
@@ -160,10 +161,6 @@
     }
     NSData *alarmListData2 = [NSKeyedArchiver archivedDataWithRootObject:self.listOfAlarms];
     [[NSUserDefaults standardUserDefaults] setObject:alarmListData2 forKey:@"AlarmListData"];
-}
-
-- (IBAction)onAddAlarm:(id)sender {
-    [self performSegueWithIdentifier:@"listToEdit" sender:nil];
 }
 
 @end
